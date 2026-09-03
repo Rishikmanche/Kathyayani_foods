@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Kathyayani Foods — Fresh, Made-to-Order South Indian Batters</title>
+  <meta name="description" content="Pure, hygienic, organic South Indian batters ground fresh only when you order. No preservatives, 100% homemade. Free morning delivery in Old Alwal, Macha Bolarum & Jonnabanda.">
+
+  <!-- Google Fonts: Marcellus, Cinzel, Work Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Marcellus&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#" class="brand-link" aria-label="Kathyayani Foods Home">
+        <img src="images/logo.png" alt="Kathyayani Foods Deity Logo" class="header-logo-icon">
+        <div class="brand-titles">
+          <span class="brand-name">KATHYAYANI FOODS</span>
+          <span class="brand-tagline">PURE · HYGIENE · ORGANIC</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with clearly visible lifestyle background photo -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-media" aria-hidden="true">
+        <img src="images/dosa-lifestyle.png" alt="Fresh Kathyayani Foods batter tubs at morning market" class="hero-bg-img">
+        <div class="hero-scrim-overlay"></div>
+        <div class="hero-swirl-watermark"></div>
+      </div>
+      <div class="hero-content-card">
+        <span class="eyebrow-chip">GROUND FRESH ON ORDER</span>
+        <h1 class="hero-title">Tradition in every batter.<br>Goodness in every bite.</h1>
+        <p class="hero-subhead">
+          Pure, homemade South Indian batters ground only after your order is placed. No preservatives, no stocked tubs, delivered fresh to your doorstep in the morning.
+        </p>
+        <div class="hero-cta-wrap">
+          <a href="https://wa.me/919059820583?text=Hi%2C%20I'd%20like%20to%20place%20an%20order%20with%20Kathyayani%20Foods" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-primary"
+             id="heroWhatsAppBtn">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.68-1.4 1.26-1.95 1.34-.51.07-1.18.1-3.41-.83-2.86-1.19-4.71-4.1-4.85-4.29-.14-.19-1.17-1.56-1.17-2.97 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .39.01.56.02.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.2-.15.32-.3.49-.15.17-.31.39-.45.52-.15.15-.3.32-.13.62.17.29.77 1.27 1.65 2.05 1.13 1.01 2.08 1.32 2.38 1.47.29.14.47.12.64-.07.18-.2.75-.88.95-1.18.2-.3.4-.25.68-.15.27.1 1.74.82 2.04.97.3.15.5.22.58.35.07.12.07.72-.17 1.4z"/>
+            </svg>
+            <span>Order on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip" aria-label="Our Guarantees">
+      <div class="trust-scroller">
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">✦</span>
+          <span>Made Fresh on Order</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">✦</span>
+          <span>No Preservatives</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-item-highlight">✦</span>
+          <span>100% Homemade</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">✦</span>
+          <span>Free Delivery in Old Alwal, Macha Bolarum & Jonnabanda</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">✦</span>
+          <span>Delivered fresh in the morning</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="products-section" id="products">
+      <div class="section-header">
+        <span class="section-eyebrow">OUR BATTERS</span>
+        <h2 class="section-title">Ground Pure. Naturally Fermented.</h2>
+        <div class="decorative-separator" aria-hidden="true">
+          <span class="sep-line"></span>
+          <img src="images/swirl-motif.svg" alt="" class="sep-swirl">
+          <span class="sep-line"></span>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered dynamically by app.js from central product store -->
+      </div>
+    </section>
+
+    <!-- "Ground Fresh, Every Time" Process Section -->
+    <section class="process-section" id="process">
+      <div class="process-container">
+        <div class="section-header">
+          <span class="section-eyebrow">THE KATHYAYANI PROMISE</span>
+          <h2 class="section-title">Ground Fresh, Every Time</h2>
+          <div class="decorative-separator" aria-hidden="true">
+            <span class="sep-line"></span>
+            <img src="images/swirl-motif.svg" alt="" class="sep-swirl">
+            <span class="sep-line"></span>
+          </div>
+          <p class="section-lead">
+            We don't stock tubs in warehouses or chillers. Every single order is freshly prepared, naturally fermented, and hand-delivered for authentic home taste.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-image-wrap">
+              <img src="images/dosa-stack.png" alt="Sealed Kathyayani Foods fresh batter tubs" class="process-img" loading="lazy">
+            </div>
+            <div class="process-content">
+              <span class="process-step-num">01</span>
+              <h3 class="process-card-title">Pure Ingredients, Never Pre-Made</h3>
+              <p class="process-card-text">
+                From wholesome jowar and split urad dal to protein-packed moong dal, we select prime ingredients and grind in hygienic, small batches only when an order is placed. Zero additives, zero preservatives.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-image-wrap">
+              <img src="images/dosa-basket.png" alt="Kathyayani fresh batter tubs packed for morning delivery" class="process-img" loading="lazy">
+            </div>
+            <div class="process-content">
+              <span class="process-step-num">02</span>
+              <h3 class="process-card-title">Fresh Morning Doorstep Delivery</h3>
+              <p class="process-card-text">
+                Batters are sealed at their peak of natural fermentation and delivered straight to your door every morning in Old Alwal, Macha Bolarum, and Jonnabanda. Just refrigerate and enjoy soft idlis and crisp dosas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Business Card Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-card">
+        <div class="contact-decor-corner top-left" aria-hidden="true"></div>
+        <div class="contact-decor-corner top-right" aria-hidden="true"></div>
+        <div class="contact-decor-corner bottom-left" aria-hidden="true"></div>
+        <div class="contact-decor-corner bottom-right" aria-hidden="true"></div>
+
+        <div class="contact-header">
+          <img src="images/logo.png" alt="Kathyayani Foods emblem" class="contact-logo">
+          <h3 class="contact-heading">Kathyayani Foods</h3>
+          <p class="contact-sub">Pure · Hygiene · Organic</p>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-row">
+            <span class="contact-label">ORDER VIA WHATSAPP</span>
+            <a href="https://wa.me/919059820583" target="_blank" rel="noopener noreferrer" class="contact-val phone-link">
+              +91 90598 20583
+            </a>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">FREE DELIVERY AREAS</span>
+            <span class="contact-val">Old Alwal · Macha Bolarum · Jonnabanda</span>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">MORNING DELIVERY & PICKUP</span>
+            <span class="contact-val">Delivered fresh in the morning · Pickup or free delivery available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <img src="images/logo.png" alt="Kathyayani Foods" class="footer-logo">
+      <p class="footer-title">KATHYAYANI FOODS</p>
+      <p class="footer-tagline">Pure · Hygiene · Organic</p>
+      <p class="footer-note">Handcrafted with traditional care in Telangana.</p>
+      <p class="footer-copy">© 2026 Kathyayani Foods. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919059820583?text=Hi%2C%20I'd%20like%20to%20place%20an%20order%20with%20Kathyayani%20Foods" 
+     class="floating-whatsapp" 
+     id="floatingWhatsApp"
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat with Kathyayani Foods on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.68-1.4 1.26-1.95 1.34-.51.07-1.18.1-3.41-.83-2.86-1.19-4.71-4.1-4.85-4.29-.14-.19-1.17-1.56-1.17-2.97 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .39.01.56.02.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.2-.15.32-.3.49-.15.17-.31.39-.45.52-.15.15-.3.32-.13.62.17.29.77 1.27 1.65 2.05 1.13 1.01 2.08 1.32 2.38 1.47.29.14.47.12.64-.07.18-.2.75-.88.95-1.18.2-.3.4-.25.68-.15.27.1 1.74.82 2.04.97.3.15.5.22.58.35.07.12.07.72-.17 1.4z"/>
+    </svg>
+    <span class="floating-tooltip">Order on WhatsApp</span>
+  </a>
+
+  <!-- Product Detail View (Overlay / Bottom Sheet on Mobile, Modal on Desktop) -->
+  <div class="pdp-backdrop" id="pdpBackdrop" aria-hidden="true">
+    <div class="pdp-container" id="pdpContainer" role="dialog" aria-modal="true" aria-labelledby="pdpTitle">
+      
+      <!-- Drag handle (Mobile) -->
+      <div class="pdp-handle-bar" id="pdpHandle" aria-label="Swipe down to close">
+        <div class="pdp-swirl-handle" aria-hidden="true">
+          <img src="images/swirl-motif.svg" alt="" class="pdp-handle-swirl-icon">
+        </div>
+      </div>
+
+      <!-- Close Button -->
+      <button type="button" class="pdp-close-btn" id="pdpCloseBtn" aria-label="Close product details">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Scrollable content area -->
+      <div class="pdp-scrollable" id="pdpScrollable">
+        
+        <!-- Image Carousel -->
+        <div class="pdp-carousel-wrapper">
+          <div class="pdp-carousel" id="pdpCarousel">
+            <!-- Carousel slides inserted by app.js -->
+          </div>
+          <!-- Dot indicators (hidden when only 1 image) -->
+          <div class="pdp-dots" id="pdpDots" aria-hidden="true"></div>
+        </div>
+
+        <!-- Product Title & Price Header -->
+        <div class="pdp-header-block">
+          <div class="pdp-title-price">
+            <h2 class="pdp-title" id="pdpTitle"></h2>
+            <div class="pdp-unit-price" id="pdpUnitPrice"></div>
+          </div>
+          <p class="pdp-hook" id="pdpHook"></p>
+
+          <!-- Badges Row (Locked decision: directly under title/price) -->
+          <div class="pdp-badges-row" id="pdpBadgesRow">
+            <!-- Pill badges inserted by app.js -->
+          </div>
+        </div>
+
+        <!-- Tabs: Description & How to Use -->
+        <div class="pdp-tabs-container">
+          <div class="pdp-tab-headers" role="tablist">
+            <button type="button" class="pdp-tab-btn active" id="tabBtnDesc" role="tab" aria-selected="true" aria-controls="tabContentDesc">
+              Description
+            </button>
+            <button type="button" class="pdp-tab-btn" id="tabBtnHowTo" role="tab" aria-selected="false" aria-controls="tabContentHowTo">
+              How to Use
+            </button>
+          </div>
+
+          <!-- Description Tab Content -->
+          <div class="pdp-tab-panel active" id="tabContentDesc" role="tabpanel" aria-labelledby="tabBtnDesc">
+            <p class="pdp-description-text" id="pdpDescText"></p>
+
+            <div class="pdp-detail-spec">
+              <span class="spec-label">INGREDIENTS</span>
+              <span class="spec-value" id="pdpIngredients"></span>
+            </div>
+
+            <div class="pdp-detail-spec">
+              <span class="spec-label">BEST FOR</span>
+              <span class="spec-value" id="pdpBestFor"></span>
+            </div>
+          </div>
+
+          <!-- How to Use Tab Content -->
+          <div class="pdp-tab-panel" id="tabContentHowTo" role="tabpanel" aria-labelledby="tabBtnHowTo">
+            <div class="storage-steps">
+              <div class="storage-step">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <strong>Refrigerate on arrival</strong>
+                  <p>Keep batter cold in your refrigerator immediately upon delivery.</p>
+                </div>
+              </div>
+              <div class="storage-step">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <strong>Use within 2 days</strong>
+                  <p>Since our batter has 0 preservatives, enjoy fresh within 48 hours for the best taste and rise.</p>
+                </div>
+              </div>
+              <div class="storage-step">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <strong>Bring to room temperature before cooking</strong>
+                  <p>Take out the required quantity 15–20 minutes before making dosas or idlis for optimal crispness.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantity Stepper Section -->
+        <div class="pdp-stepper-wrap">
+          <span class="stepper-label">Select Quantity:</span>
+          <div class="stepper-control" role="group" aria-label="Quantity selector">
+            <button type="button" class="stepper-btn" id="stepperMinus" aria-label="Decrease quantity by 1 kilogram">−</button>
+            <span class="stepper-value" id="stepperDisplay">1kg</span>
+            <button type="button" class="stepper-btn" id="stepperPlus" aria-label="Increase quantity by 1 kilogram">+</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sticky Bottom CTA Bar -->
+      <div class="pdp-sticky-bar">
+        <div class="pdp-bar-total">
+          <span class="bar-total-label">Total Amount</span>
+          <span class="bar-total-amount" id="pdpTotalAmount">₹90</span>
+        </div>
+        <a href="#" class="btn-primary pdp-order-btn" id="pdpWhatsAppBtn" target="_blank" rel="noopener noreferrer">
+          <svg class="whatsapp-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.68-1.4 1.26-1.95 1.34-.51.07-1.18.1-3.41-.83-2.86-1.19-4.71-4.1-4.85-4.29-.14-.19-1.17-1.56-1.17-2.97 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .39.01.56.02.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.2-.15.32-.3.49-.15.17-.31.39-.45.52-.15.15-.3.32-.13.62.17.29.77 1.27 1.65 2.05 1.13 1.01 2.08 1.32 2.38 1.47.29.14.47.12.64-.07.18-.2.75-.88.95-1.18.2-.3.4-.25.68-.15.27.1 1.74.82 2.04.97.3.15.5.22.58.35.07.12.07.72-.17 1.4z"/>
+          </svg>
+          <span>Order on WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
