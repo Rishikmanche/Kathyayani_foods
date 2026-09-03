@@ -189,6 +189,10 @@ function openPDP(product) {
   // Update stepper & totals
   updateStepperAndTotal();
 
+  // Reset modal and carousel scroll positions
+  pdpScrollable.scrollTop = 0;
+  pdpCarousel.scrollLeft = 0;
+
   // Show backdrop
   pdpBackdrop.classList.add('open');
   pdpBackdrop.setAttribute('aria-hidden', 'false');
